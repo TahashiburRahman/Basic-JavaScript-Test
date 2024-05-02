@@ -1,0 +1,239 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: #2b2626;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    margin: 10px;
+    padding-left: 20px;
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+    border-radius: 40%;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav ul{
+    list-style: none;
+    display: flex;  
+}
+.nav ul>li{
+    padding: 5px;
+    font-size: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: space-around;
+    margin: 0px 23px;
+}
+.nav ul>li a{
+    text-decoration: none;
+    color: white;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.navi li:nth-child(2) a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+.active {
+    background-color: #04AA6D;
+}
+.mode{
+    align-items: center;
+    width: 10%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dark{
+    padding: 3px 20px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 30px auto;
+}
+.mySlides{
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+.formSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0;
+    padding: 50px;
+    color: black;
+}
+
+form {
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7; 
+    box-shadow: 100px #111;
+    border-radius: 8px ;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: darkblue;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
+.submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Light mode button color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #0056b3; /* Light mode button hover color */
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+#output {
+    padding: 20px;
+    background-color: #f7f7f7; /* Light mode background color */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333; 
+}
+
+#output p {
+    margin-bottom: 10px;
+}
+
+#output strong {
+    color: #007bff; /* Light mode strong text color */
+}
+
+.footer{
+    color: aliceblue;
+    height: 200px;
+    width: 100%;   
+    background-color: #331133;
+    display: flex;
+    justify-content: space-around;
+}
+.footer > .location, .about, .contact, .top{
+    padding-top: 30px;
+}
+.location a {
+    color: white;
+    text-decoration: none;
+}
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+.top > button{
+    font-size: 35px;
+    color: orange;
+    background-color:#331133;
+}
+
+.copyright{
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+background-color:#331133;
+color: wheat;
+padding: 20px 0px;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.services-section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.service {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.dark {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dark:hover {
+    background-color: #555;
+}
+
+/* If you want to style the button differently in dark mode */
+.dark-mode .dark {
+    background-color: #ddd;
+    color: #333;
+}
+
+.dark-mode .dark:hover {
+    background-color: #ccc;
+}

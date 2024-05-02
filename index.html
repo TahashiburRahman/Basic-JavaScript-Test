@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MEWallpaper</title>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="reshot-icon-wallpapers-4KQ2HYEPJ8.svg" alt="logo">
+        </div>
+        <div class="nav">
+            <ul class="navi">
+                <li><a href="#home"class="active">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="#about" onclick="scrollToAbout()">About</a></li>
+                <li><a href="#contact" onclick="scrollToContact()">Contact</a></li>
+                <li><a href="#formSection" onclick="scrollToFormSection()">Sign Up</a></li>        
+            </ul>
+        </div>
+        <div class="mode">
+            <button class="dark">Dark</button>
+        </div>
+    </div>
+    <!-- Hero Section -->
+
+        <div class="content">
+            <img class="mySlides" src="slide1.png" alt="">
+        </div>
+
+    <!-- Form Section -->
+    <div class="formSection" id="formSection">
+        <form action="#" method="post">
+            <div class="title"><h2>Sign Up!</h2></div><br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Name">
+            <div id="name-error" class="error-message"></div><br>
+    
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="E-Mail">
+            <div id="email-error" class="error-message"></div><br>
+    
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" placeholder="Phone">
+            <div id="phone-error" class="error-message"></div><br>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Your Message" rows="5"></textarea>
+            <div id="message-error" class="error-message"></div><br>
+    
+            <input type="submit" value="submit" class="submit" id="submit"><br>
+        </form>
+        <div id="output">
+            <p>your name:</p>
+            <p>your email:</p>
+            <p>your phone:</p>
+            <p>your message:</p>
+        </div>
+    </div>
+    
+    <!-- footer Section -->
+    <div class="footer">
+        <div class="location">
+            <h3>Our Location</h3><br>
+            <p><a href="https://www.google.com/maps/place/567,West+Monipur,Mirpur-2,Dhaka-1216" target="_blank">567, West Monipur, Mirpur-2, Dhaka-1216</a></p>
+        </div>
+        
+        <div class="about" id="about-section">
+            <h3>About Us</h3><br>
+            <p>We have been providing high-quality wallpapers <br>around the world, catering to diverse tastes and preferences. <br> With a passion for art and creativity, our mission is to <br>transform your digital space into a <br> visually stunning experience.</p>
+        </div>
+        <div class="contact" id="contact-section">
+            <h3>Contact</h3><br>
+            <p>Phone: <a href="tel:+8801625628128">+8801 6256 28128</a></p>
+        </div>
+        <div class="top">
+            <button onclick='window.scrollTo({top: 0, behavior: "smooth"})'><i class="fa-solid fa-arrow-up">Top</i></button>
+        </div>
+        <br>
+    </div>
+    <div class="copyright">
+        <p>Copyright by @Tahashib</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
